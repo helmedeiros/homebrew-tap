@@ -5,21 +5,21 @@
 class Assetcap < Formula
   desc "Digital Asset Capitalization Management Tool"
   homepage "https://github.com/helmedeiros/digital-asset-capitalization"
-  version "1.19.0"
+  version "1.20.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/helmedeiros/digital-asset-capitalization/releases/download/v1.19.0/assetcap_darwin_amd64.tar.gz"
-      sha256 "df358ce766a354589c221908ec00417b1d79fe744293f103f9a976eebc5113e1"
+      url "https://github.com/helmedeiros/digital-asset-capitalization/releases/download/v1.20.0/assetcap_darwin_amd64.tar.gz"
+      sha256 "e01acc4882d28f1407ec4e6e914e5f6635bfeb133726491bff087df8b7d838f1"
 
       define_method(:install) do
         bin.install "assetcap"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/helmedeiros/digital-asset-capitalization/releases/download/v1.19.0/assetcap_darwin_arm64.tar.gz"
-      sha256 "6fca86d1f3c18407678118de28bf771cbc6ed9bba9093a4d4a0130a9df536afd"
+      url "https://github.com/helmedeiros/digital-asset-capitalization/releases/download/v1.20.0/assetcap_darwin_arm64.tar.gz"
+      sha256 "34980a6744b825a7f4baa8d7f1e9554f80b4368041b225c9b35111b1d01048fe"
 
       define_method(:install) do
         bin.install "assetcap"
@@ -29,15 +29,15 @@ class Assetcap < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/helmedeiros/digital-asset-capitalization/releases/download/v1.19.0/assetcap_linux_amd64.tar.gz"
-      sha256 "f7029af43ccc3442721e76f18b5a2e2005eaa87f597856e2a428bf292257e16c"
+      url "https://github.com/helmedeiros/digital-asset-capitalization/releases/download/v1.20.0/assetcap_linux_amd64.tar.gz"
+      sha256 "e1564699fc315a83aee35764879b2d0a293d4bf8b258ed24183acd2cfb8f97ca"
       define_method(:install) do
         bin.install "assetcap"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/helmedeiros/digital-asset-capitalization/releases/download/v1.19.0/assetcap_linux_arm64.tar.gz"
-      sha256 "ab2877fdcd08b037c20eb6cfcbd47e170272e213020fd3d33000315a9086e472"
+      url "https://github.com/helmedeiros/digital-asset-capitalization/releases/download/v1.20.0/assetcap_linux_arm64.tar.gz"
+      sha256 "eda60129a0e20c9c54219e951a2c7383a49fa879f981e1590830f566817dd58e"
       define_method(:install) do
         bin.install "assetcap"
       end
