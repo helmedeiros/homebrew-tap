@@ -4,21 +4,21 @@
 class Fastretro < Formula
   desc "Terminal tool for sprint retrospectives and team health checks"
   homepage "https://github.com/helmedeiros/fastretro-cli"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/helmedeiros/fastretro-cli/releases/download/v1.0.0/fastretro-darwin-amd64.tar.gz"
-      sha256 "54b000378608d30094ac523039c47b56816b2a9b3686d1ddfba1ff1b3cb65e4b"
+      url "https://github.com/helmedeiros/fastretro-cli/releases/download/v1.1.0/fastretro-darwin-amd64.tar.gz"
+      sha256 "58a3ad2bdcc5d524cfe528cf0082a765045597bd51b76e4f45bed01f1f7edcd7"
 
       define_method(:install) do
         bin.install "fastretro-darwin-amd64" => "fastretro"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/helmedeiros/fastretro-cli/releases/download/v1.0.0/fastretro-darwin-arm64.tar.gz"
-      sha256 "f324f73d15db53a67227cd758102443ed81e92cb47128f83daf8cc716676ec62"
+      url "https://github.com/helmedeiros/fastretro-cli/releases/download/v1.1.0/fastretro-darwin-arm64.tar.gz"
+      sha256 "fa5502c59341b773663761c99aa14eb333cfe0647a3c05c8f93235602148aa74"
 
       define_method(:install) do
         bin.install "fastretro-darwin-arm64" => "fastretro"
@@ -28,16 +28,16 @@ class Fastretro < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/helmedeiros/fastretro-cli/releases/download/v1.0.0/fastretro-linux-amd64.tar.gz"
-      sha256 "11f09f5e2d3cffe2d2dc09fc35d00f0e8f86ce1560d5e01af0d2c237d7e73fc9"
+      url "https://github.com/helmedeiros/fastretro-cli/releases/download/v1.1.0/fastretro-linux-amd64.tar.gz"
+      sha256 "d2eb251176b9158843f88eff815ad1d3ba2b990de987504ba5bc487bff3b52fd"
 
       define_method(:install) do
         bin.install "fastretro-linux-amd64" => "fastretro"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/helmedeiros/fastretro-cli/releases/download/v1.0.0/fastretro-linux-arm64.tar.gz"
-      sha256 "a8ea71ad2c1bc20ece2f3f101dd6db2bb011683836e91cc6bf89e8eba8fa336e"
+      url "https://github.com/helmedeiros/fastretro-cli/releases/download/v1.1.0/fastretro-linux-arm64.tar.gz"
+      sha256 "7d7e4af767263e7b4459ee85be646e3c11e3b6a9f01cd45f22277a463c79c0af"
 
       define_method(:install) do
         bin.install "fastretro-linux-arm64" => "fastretro"
