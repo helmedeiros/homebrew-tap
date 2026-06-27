@@ -21,3 +21,7 @@ brew install assetcap
 This tap is automatically maintained by GoReleaser. Formulae are updated automatically when new releases are published.
 
 For more information about the tools, visit: https://github.com/helmedeiros/digital-asset-capitalization
+
+## License
+
+[MIT](LICENSE)
